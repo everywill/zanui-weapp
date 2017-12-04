@@ -112,8 +112,13 @@ module.exports = {
       css: 'passed'
     },
     {
-      keywords: ['shopping-cart'],
+      keywords: ['cart'],
       src: '购物车2.svg',
+      css: 'cart'
+    },
+    {
+      keywords: ['shopping-cart'],
+      src: '购物车1.svg',
       css: 'shopping-cart'
     },
     {
@@ -212,11 +217,6 @@ module.exports = {
       keywords: ['other', 'pay'],
       src: '其他支付方式.svg',
       css: 'other-pay'
-    },
-    {
-      keywords: ['cart'],
-      src: '购物车.svg',
-      css: 'cart'
     },
     {
       keywords: ['browsing', 'history'],
@@ -380,11 +380,6 @@ module.exports = {
       css: 'gift-card'
     },
     {
-      keywords: ['coupon'],
-      src: '优惠券卡.svg',
-      css: 'coupon'
-    },
-    {
       keywords: ['clock'],
       src: '时钟.svg',
       css: 'clock'
@@ -428,6 +423,39 @@ module.exports = {
       keywords: ['phone'],
       src: '电话.svg',
       css: 'phone'
+    },
+    {
+      keywords: ['buy', 'add'],
+      src: '加购.svg',
+      css: 'add-o'
+    },
+    {
+      src: '播放.svg',
+      css: 'play'
+    },
+    {
+      src: '暂停.svg',
+      css: 'pause'
+    },
+    {
+      src: '停止.svg',
+      css: 'stop'
+    },
+    {
+      src: 'HOT.svg',
+      css: 'hot'
+    },
+    {
+      src: 'NEW.svg',
+      css: 'new'
+    },
+    {
+      src: '新品.svg',
+      css: 'new-arrival'
+    },
+    {
+      src: '热卖.svg',
+      css: 'hot-sale'
     }
   ]
 };

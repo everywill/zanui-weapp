@@ -26,6 +26,7 @@ Page({
       'photograph',
       'add',
       'add2',
+      'add-o',
       'photo',
       'cart',
       'arrow',
@@ -75,14 +76,20 @@ Page({
       'description',
       'card',
       'gift-card',
-      'coupon',
       'completed',
       'value-card',
       'certificate',
       'tosend',
       'sign',
       'home',
-      'phone'
+      'phone',
+      'play',
+      'pause',
+      'stop',
+      'hot',
+      'new',
+      'new-arrival',
+      'hot-sale'
     ]
   }
 });

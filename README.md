@@ -41,6 +41,30 @@ npm run dev
 
 我们推荐在你的`app.wxss`直接引入`zanui-weapp/dist/index.wxss`。
 
+#### 具体组件文档
+* [Badge - 徽章](./packages/badge/README.md)
+* [Button - 按钮](./packages/btn/README.md)
+* [Capsule - 胶囊](./packages/capsule/README.md)
+* [Card - 卡片](./packages/card/README.md)
+* [Cell - 单元格](./packages/cell/README.md)
+* [Helper - 基础样式](./packages/helper/README.md)
+* [Icon - 图标](./packages/icon/README.md)
+* [Layout - 布局](./packages/row/README.md)
+* [Loadmore - 加载](./packages/loadmore/README.md)
+* [Noticebar - 通告栏](./packages/noticebar/README.md)
+* [Panel - 面板](./packages/panel/README.md)
+* [Popup - 弹出层](./packages/popup/README.md)
+* [Stepper - 计数器](./packages/stepper/README.md)
+* [Select - 选择](./packages/select/README.md)
+* [Steps - 步骤条](./packages/steps/README.md)
+* [Switch - 开关](./packages/switch/README.md)
+* [Tab - 标签](./packages/tab/README.md)
+* [Field - 输入框](./packages/field/README.md)
+* [Dialog - 弹出框](./packages/dialog/README.md)
+* [Tag - 标签](./packages/tag/README.md)
+* [Toast - 轻提示](./packages/toast/README.md)
+* [Toptips - 顶部提示](./packages/toptips/README.md)
+
 根据功能的不同，可以将组件大致的分为4类：
 
 #### 1. 简单组件
@@ -82,36 +106,36 @@ npm run dev
 如数量选择组件，需要先引入模版，然后给模版传递数据
 
 ~~~html
-<!-- example/quantity/index.html -->
+<!-- example/stepper/index.html -->
 
-<import src="path/to/zanui-weapp/dist/quantity/index.wxml" />
+<import src="path/to/zanui-weapp/dist/stepper/index.wxml" />
 
-<template is="zan-quantity" data="{{ ...quantity, componentId: 'customId' }}" />
+<template is="zan-stepper" data="{{ ...stepper, componentId: 'customId' }}" />
 ~~~
 
-然后通过`Zan.Quantity`把相关回调注入到页面中
+然后通过`Zan.Stepper`把相关回调注入到页面中
 
 ~~~js
-// example/quantity/index.js
+// example/stepper/index.js
 
 var Zan = require('path/to/zanui-weapp/dist/index');
 
-Page(Object.assign({}, Zan.Quantity, {
+Page(Object.assign({}, Zan.Stepper, {
   data: {
-    quantity: {
-      quantity: 10,
+    stepper: {
+      stepper: 10,
       min: 1,
       max: 20
     },
   },
 
-  handleZanQuantityChange(e) {
-    // 如果页面有多个Quantity组件，则通过唯一componentId进行索引
+  handleZanStepperChange(e) {
+    // 如果页面有多个Stepper组件，则通过唯一componentId进行索引
     var compoenntId = e.componentId;
-    var quantity = e.quantity;
+    var stepper = e.stepper;
 
     this.setData({
-      'quantity.quantity': quantity
+      'stepper.stepper': stepper
     });
   }
 }));
